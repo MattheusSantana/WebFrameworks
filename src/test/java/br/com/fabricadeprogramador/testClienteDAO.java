@@ -65,6 +65,7 @@ public class testClienteDAO {
 
 
     @Transactional
+    @Test
     public void testBuscarPorId(){
         Estado estado = new Estado("Mato Grosso", "MT");
 
