@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.1.xsd">
+
+    <!--Diz ao Spring que ele deve usar a configuração das annotations -->
+    <tx:annotation-driven/>
+    <!-- Informa o pacote onde o Spring ira buscar as classes anotadas (@Controller, @Service...) -->
+    <context:component-scan base-package="br.com.fabricadeprogramador"/> <!-- Scaneador de anotações do projeto-->
+
+
+    <!-- configurando db-->
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="org.postgresql.Driver"/>
+        <property name="url" value="jdbc:postgresql://localhost:5433/ClientMaster"/>
+        <property name="username" value="postgres"/>
+        <property name="password" value="postgres"/>
+    </bean>
+
+    <!-- Configurando entityManager do Spring e integrando hibernate no contexto spring. -->
+    <bean id="entityManagerFactory"
+          class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"> <!-- apontando para EntityManager do Spring -->
+        <property name="dataSource" ref="dataSource"/> <!--  fazendo referencia a dataSource ja criada -->
+        <property name="jpaVendorAdapter"> <!-- framework que irá trabalhar, nesse  caso o Hibernate. -->
+            <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"/>
+
+        </property>
+    </bean>
+
+
+    <!--   Controle de Transacoes -->
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory"
+                  ref="entityManagerFactory"/> <!-- passa objeto EntityManager pois em.getTransaction....-->
+    </bean>
+
+</beans>
