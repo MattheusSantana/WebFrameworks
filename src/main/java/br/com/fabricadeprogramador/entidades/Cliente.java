@@ -17,7 +17,8 @@ public class Cliente extends EntidadeBase{
     @ManyToOne(cascade = CascadeType.ALL)
     private Cidade cidade;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+
     @JoinTable
     private List<Contato> contato = new ArrayList<>();
 

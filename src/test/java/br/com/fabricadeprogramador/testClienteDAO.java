@@ -1,6 +1,7 @@
 
 package br.com.fabricadeprogramador;
 
+import br.com.fabricadeprogramador.DAO.ClienteDAO;
 import br.com.fabricadeprogramador.DAO.DAO;
 import br.com.fabricadeprogramador.entidades.*;
 import org.junit.Assert;
@@ -28,38 +29,43 @@ public class testClienteDAO {
 
 
     @Autowired
-    private DAO<Cliente> clienteDAO;
+    private ClienteDAO clienteDAO;
+
+
+    Estado estado = new Estado("Mato Grosso", "MT");
+
+
+    Cidade cidade = new Cidade(estado, "Cuiabá");
+
+    TipoContato tipoContato = new TipoContato("Email");
+    TipoContato tipoContato2 = new TipoContato("Telefone");
+    TipoContato tipoContato3 = new TipoContato("Celular");
+
+    Contato contato = new Contato("joao@email.com", tipoContato);
+    Contato contato2 = new Contato("3200-0000", tipoContato2);
+    Contato contato3 = new Contato("9999-9999", tipoContato3);
+
+
+
+    Cliente cliente = new Cliente();
+
+
+
 
 
     @Test
     @Transactional
     public void testSalvar(){
-        Estado estado = new Estado("Mato Grosso", "MT");
 
-
-        Cidade cidade = new Cidade(estado, "Cuiabá");
-
-        TipoContato tipoContato = new TipoContato("Email");
-        TipoContato tipoContato2 = new TipoContato("Telefone");
-        TipoContato tipoContato3 = new TipoContato("Celular");
-
-        Contato contato = new Contato("joao@email.com", tipoContato);
-        Contato contato2 = new Contato("3200-0000", tipoContato2);
-        Contato contato3 = new Contato("9999-9999", tipoContato3);
-
-
-
-        Cliente cliente = new Cliente();
         cliente.setCidade(cidade);
-        cliente.setNome("João ");
+        cliente.setNome("JoãoG ");
         cliente.getContato().add(contato);
         cliente.getContato().add(contato2);
         cliente.getContato().add(contato3);
 
-
-        Cliente clienteRetorno = clienteDAO.cadastrar(cliente);
-        Assert.assertNotNull(clienteRetorno);
-        System.out.println(clienteRetorno);
+        clienteDAO.salvar(cliente);
+        Assert.assertNotNull(cliente);
+        System.out.println(cliente);
 
     }
 
@@ -67,33 +73,11 @@ public class testClienteDAO {
     @Transactional
     @Test
     public void testBuscarPorId(){
-        Estado estado = new Estado("Mato Grosso", "MT");
 
 
-        Cidade cidade = new Cidade(estado, "Cuiabá");
-
-        TipoContato tipoContato = new TipoContato("Email");
-        TipoContato tipoContato2 = new TipoContato("Telefone");
-        TipoContato tipoContato3 = new TipoContato("Celular");
-
-        Contato contato = new Contato("joao@email.com", tipoContato);
-        Contato contato2 = new Contato("3200-0000", tipoContato2);
-        Contato contato3 = new Contato("9999-9999", tipoContato3);
-
-
-
-        Cliente cliente = new Cliente();
-        cliente.setCidade(cidade);
-        cliente.setNome("João ");
-        cliente.getContato().add(contato);
-        cliente.getContato().add(contato2);
-        cliente.getContato().add(contato3);
-
-
-        Cliente clienteRetorno = clienteDAO.cadastrar(cliente);
-
-            Assert.assertNotNull(clienteDAO.buscarPorId(clienteRetorno.getId()));
-            System.out.println(clienteRetorno);
+        Cliente clienteRetorno = (clienteDAO.buscarPorId(Cliente.class, 156));
+        Assert.assertNotNull(clienteRetorno);
+        System.out.println(clienteRetorno);
 
 
     }
@@ -103,34 +87,8 @@ public class testClienteDAO {
     @Test
     public void testExcluir(){
 
-        Estado estado = new Estado("Mato Grosso", "MT");
-
-
-        Cidade cidade = new Cidade(estado, "Cuiabá");
-
-        TipoContato tipoContato = new TipoContato("Email");
-        TipoContato tipoContato2 = new TipoContato("Telefone");
-        TipoContato tipoContato3 = new TipoContato("Celular");
-
-        Contato contato = new Contato("joão@email.com", tipoContato);
-        Contato contato2 = new Contato("3200-0000", tipoContato2);
-        Contato contato3 = new Contato("9999-9999", tipoContato3);
-
-
-
-        Cliente cliente = new Cliente();
-        cliente.setCidade(cidade);
-        cliente.setNome("João ");
-        cliente.getContato().add(contato);
-        cliente.getContato().add(contato2);
-        cliente.getContato().add(contato3);
-
-        //Criando um obj cliente para receber o cliente salvo.
-        Cliente clienteRetorno = clienteDAO.cadastrar(cliente);
-
-        //Excluindo apenas objeto de retorno.
-        clienteDAO.excluir(clienteRetorno);
-        Assert.assertNull(clienteDAO.buscarPorId(clienteRetorno.getId()));
+        clienteDAO.excluir(Cliente.class, 156);
+        Assert.assertNull(clienteDAO.buscarPorId(Cliente.class, 156));
 
     }
 

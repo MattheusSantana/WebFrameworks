@@ -18,58 +18,9 @@ import java.util.List;
 
 @Repository
 @Transactional
-public class ClienteDAO implements DAO<Cliente> {
-
-    @PersistenceContext
-    private EntityManager em;
-
-    @Override
-    @Transactional
-    public Cliente cadastrar(Cliente cliente){
-         return em.merge(cliente);
-
-    }
-
-    public Cliente alterar(Cliente cliente){
-
-        //Se usuario existir no banco.
-        if (buscarPorId(cliente.getId()) != null) {
-            return em.merge(cliente);
-        }
-        //Se não existir no banco.
-
-        if (buscarPorId(cliente.getId()) == null) {
-            System.out.println("Impossível alterar! Usuário não encontrado no banco.");
-        }
-
-        return null;
-    }
+public class ClienteDAO extends GenericDAO<Cliente> {
 
 
-    @Override
-    public Cliente excluir(Cliente cliente){
-        if (buscarPorId(cliente.getId()) != null) {
-            em.remove(buscarPorId(cliente.getId()));
-        }
-        return null;
-    }
-
-    @Override
-    public Cliente buscarPorId(long id){
-
-
-
-            Cliente clienteRetorno = em.find(Cliente.class, id);
-            if (clienteRetorno != null) {
-                return clienteRetorno;
-            } else {
-                return null;
-            }
-    }
-
-
-
-    @Override
     public List<Cliente> buscarTodos() {
         Query query = em.createQuery("select c from Cliente c order by c.id");
         List<Cliente> listaClientes = (List<Cliente>) query.getResultList();
