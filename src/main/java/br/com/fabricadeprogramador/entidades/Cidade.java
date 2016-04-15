@@ -66,9 +66,6 @@ public class Cidade extends EntidadeBase {
 
     @Override
     public String toString() {
-        return "Cidade{" +
-                "nome='" + nome + '\'' +
-                ", estado=" + estado +
-                '}';
+        return "- " + nome +" "+ estado;
     }
 }

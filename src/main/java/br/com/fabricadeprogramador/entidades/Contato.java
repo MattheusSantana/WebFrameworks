@@ -82,10 +82,6 @@ public class Contato extends EntidadeBase{
 
     @Override
     public String toString() {
-        return "Contato{" +
-                "contato='" + contato + '\'' +
-                ", tipoContato=" + tipoContato +
-                ", cliente=" + cliente +
-                '}';
+        return contato + tipoContato;
     }
 }

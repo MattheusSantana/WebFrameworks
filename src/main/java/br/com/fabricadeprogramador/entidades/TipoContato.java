@@ -46,8 +46,6 @@ public class TipoContato extends EntidadeBase{
 
     @Override
     public String toString() {
-        return "TipoContato{" +
-                "tipo='" + tipo + '\'' +
-                '}';
+        return tipo;
     }
 }

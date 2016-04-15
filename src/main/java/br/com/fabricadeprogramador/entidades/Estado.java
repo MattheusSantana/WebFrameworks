@@ -66,9 +66,6 @@ public class Estado extends EntidadeBase{
 
     @Override
     public String toString() {
-        return "Estado{" +
-                "nome='" + nome + '\'' +
-                ", uf='" + uf + '\'' +
-                '}';
+        return "- "+ uf;
     }
 }

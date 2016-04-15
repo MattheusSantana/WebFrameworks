@@ -2,7 +2,6 @@
 package br.com.fabricadeprogramador;
 
 import br.com.fabricadeprogramador.DAO.ClienteDAO;
-import br.com.fabricadeprogramador.DAO.DAO;
 import br.com.fabricadeprogramador.entidades.*;
 import org.junit.Assert;
 import org.junit.Test;

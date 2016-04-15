@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4eafd0af-f7d3-4420-9a76-158286428b2e" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/DAO/DAO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/br/com/fabricadeprogramador/AppTest.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/DAO/ClienteDAO.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/DAO/ClienteDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/entidades/Cliente.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/entidades/Cliente.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/entidades/Cidade.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/entidades/Cidade.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/entidades/Contato.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/entidades/Contato.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/entidades/Estado.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/entidades/Estado.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/entidades/TipoContato.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/entidades/TipoContato.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/br/com/fabricadeprogramador/testClienteDAO.java" afterPath="$PROJECT_DIR$/src/test/java/br/com/fabricadeprogramador/testClienteDAO.java" />
     </list>
     <ignored path="fdpweb3.iws" />
@@ -28,86 +32,7 @@
     <favorites_list name="fdpweb3" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="testClienteDAO.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/br/com/fabricadeprogramador/testClienteDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.67979455">
-              <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClienteDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/DAO/ClienteDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/DAO/DAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Cliente.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/entidades/Cliente.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GenericDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/DAO/GenericDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="springbeans.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springbeans.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -127,16 +52,25 @@
         <option value="$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/DAO/DAO.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springbeans.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/entidades/TipoContato.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/entidades/Estado.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/entidades/Cidade.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/entidades/Contato.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/DAO/GenericDAO.java" />
-        <option value="$PROJECT_DIR$/src/test/java/br/com/fabricadeprogramador/testClienteDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/DAO/ClienteDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/entidades/Cliente.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/DAO/GenericDAOBuscas.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/DAO/EstadoDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/DAO/CidadeDAO.java" />
+        <option value="$PROJECT_DIR$/src/test/java/br/com/fabricadeprogramador/testCidadeDAO.java" />
+        <option value="$PROJECT_DIR$/src/test/java/br/com/fabricadeprogramador/testEstadoDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/entidades/Estado.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/entidades/Cidade.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/entidades/Contato.java" />
+        <option value="$PROJECT_DIR$/src/test/java/br/com/fabricadeprogramador/TestClienteDAO2.java" />
+        <option value="$PROJECT_DIR$/src/test/java/br/com/fabricadeprogramador/testClienteDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/DAO/ContatoDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/DAO/TipoContatoDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/entidades/TipoContato.java" />
+        <option value="$PROJECT_DIR$/src/test/java/br/com/fabricadeprogramador/testTipoContato.java" />
       </list>
     </option>
   </component>
@@ -247,6 +181,18 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fabricadeprogramador" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -384,8 +330,8 @@
       <recent name="C:\Users\Matheus\fdpweb3\src\main\java\br\com\fabricadeprogramador\entidades" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.testClienteDAO.testBuscarTodos">
-    <configuration default="false" name="testClienteDAO.testSalvar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.testTipoContato.testBuscarPorId">
+    <configuration default="false" name="testEstadoDAO.testBuscarPorNome" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="br.com.fabricadeprogramador.*" />
@@ -396,8 +342,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="br.com.fabricadeprogramador" />
-      <option name="MAIN_CLASS_NAME" value="br.com.fabricadeprogramador.testClienteDAO" />
-      <option name="METHOD_NAME" value="testSalvar" />
+      <option name="MAIN_CLASS_NAME" value="br.com.fabricadeprogramador.testEstadoDAO" />
+      <option name="METHOD_NAME" value="testBuscarPorNome" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -411,7 +357,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="testClienteDAO.testBuscarPorId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="testCidadeDAO.testBuscarPorId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="br.com.fabricadeprogramador.*" />
@@ -422,7 +368,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="br.com.fabricadeprogramador" />
-      <option name="MAIN_CLASS_NAME" value="br.com.fabricadeprogramador.testClienteDAO" />
+      <option name="MAIN_CLASS_NAME" value="br.com.fabricadeprogramador.testCidadeDAO" />
       <option name="METHOD_NAME" value="testBuscarPorId" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -437,7 +383,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="testClienteDAO.testExcluir" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="testEstadoDAO.testBuscarPorId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="br.com.fabricadeprogramador.*" />
@@ -448,8 +394,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="br.com.fabricadeprogramador" />
-      <option name="MAIN_CLASS_NAME" value="br.com.fabricadeprogramador.testClienteDAO" />
-      <option name="METHOD_NAME" value="testExcluir" />
+      <option name="MAIN_CLASS_NAME" value="br.com.fabricadeprogramador.testEstadoDAO" />
+      <option name="METHOD_NAME" value="testBuscarPorId" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -463,7 +409,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="testClienteDAO.testBuscarTodos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="testTipoContato.testBuscarTodos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="br.com.fabricadeprogramador.*" />
@@ -474,8 +420,34 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="br.com.fabricadeprogramador" />
-      <option name="MAIN_CLASS_NAME" value="br.com.fabricadeprogramador.testClienteDAO" />
+      <option name="MAIN_CLASS_NAME" value="br.com.fabricadeprogramador.testTipoContato" />
       <option name="METHOD_NAME" value="testBuscarTodos" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="testTipoContato.testBuscarPorId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="br.com.fabricadeprogramador.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="fdpweb3" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="br.com.fabricadeprogramador" />
+      <option name="MAIN_CLASS_NAME" value="br.com.fabricadeprogramador.testTipoContato" />
+      <option name="METHOD_NAME" value="testBuscarPorId" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -606,18 +578,20 @@
       <envs />
       <method />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.testClienteDAO.testSalvar" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.testClienteDAO.testBuscarPorId" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.testClienteDAO.testExcluir" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.testClienteDAO.testBuscarTodos" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.testEstadoDAO.testBuscarPorNome" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.testCidadeDAO.testBuscarPorId" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.testEstadoDAO.testBuscarPorId" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.testTipoContato.testBuscarTodos" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.testTipoContato.testBuscarPorId" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.testClienteDAO.testBuscarTodos" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.testClienteDAO.testExcluir" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.testClienteDAO.testBuscarPorId" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.testClienteDAO.testSalvar" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.testTipoContato.testBuscarPorId" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.testTipoContato.testBuscarTodos" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.testCidadeDAO.testBuscarPorId" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.testEstadoDAO.testBuscarPorId" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.testEstadoDAO.testBuscarPorNome" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
@@ -641,40 +615,40 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="testClienteDAO_testBuscarPorId - 2016.04.15 at 13h 49m 56s.xml">
-      <configuration name="testClienteDAO.testBuscarPorId" configurationId="JUnit" />
+    <history-entry file="testCidadeDAO_testBuscarPorId - 2016.04.15 at 17h 23m 09s.xml">
+      <configuration name="testCidadeDAO.testBuscarPorId" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testClienteDAO_testBuscarPorId - 2016.04.15 at 13h 51m 48s.xml">
-      <configuration name="testClienteDAO.testBuscarPorId" configurationId="JUnit" />
+    <history-entry file="testCidadeDAO_testBuscarPorId - 2016.04.15 at 17h 25m 08s.xml">
+      <configuration name="testCidadeDAO.testBuscarPorId" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testClienteDAO_testBuscarPorId - 2016.04.15 at 13h 53m 13s.xml">
-      <configuration name="testClienteDAO.testBuscarPorId" configurationId="JUnit" />
+    <history-entry file="testCidadeDAO_testBuscarPorId - 2016.04.15 at 17h 26m 52s.xml">
+      <configuration name="testCidadeDAO.testBuscarPorId" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testClienteDAO_testBuscarPorId - 2016.04.15 at 13h 54m 35s.xml">
-      <configuration name="testClienteDAO.testBuscarPorId" configurationId="JUnit" />
+    <history-entry file="testCidadeDAO_testBuscarPorId - 2016.04.15 at 17h 27m 57s.xml">
+      <configuration name="testCidadeDAO.testBuscarPorId" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testClienteDAO_testBuscarPorId - 2016.04.15 at 13h 56m 16s.xml">
-      <configuration name="testClienteDAO.testBuscarPorId" configurationId="JUnit" />
+    <history-entry file="testCidadeDAO_testBuscarPorId - 2016.04.15 at 17h 29m 04s.xml">
+      <configuration name="testCidadeDAO.testBuscarPorId" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testClienteDAO_testBuscarPorId - 2016.04.15 at 13h 57m 42s.xml">
-      <configuration name="testClienteDAO.testBuscarPorId" configurationId="JUnit" />
+    <history-entry file="testCidadeDAO_testBuscarPorId - 2016.04.15 at 17h 30m 26s.xml">
+      <configuration name="testCidadeDAO.testBuscarPorId" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testClienteDAO_testBuscarTodos - 2016.04.15 at 14h 02m 37s.xml">
-      <configuration name="testClienteDAO.testBuscarTodos" configurationId="JUnit" />
+    <history-entry file="testEstadoDAO_testBuscarPorId - 2016.04.15 at 17h 20m 32s.xml">
+      <configuration name="testEstadoDAO.testBuscarPorId" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testClienteDAO_testBuscarTodos - 2016.04.15 at 14h 15m 55s.xml">
-      <configuration name="testClienteDAO.testBuscarTodos" configurationId="JUnit" />
+    <history-entry file="testTipoContato_testBuscarPorId - 2016.04.15 at 17h 46m 40s.xml">
+      <configuration name="testTipoContato.testBuscarPorId" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testClienteDAO_testExcluir - 2016.04.15 at 14h 01m 20s.xml">
-      <configuration name="testClienteDAO.testExcluir" configurationId="JUnit" />
+    <history-entry file="testTipoContato_testBuscarPorId - 2016.04.15 at 17h 47m 36s.xml">
+      <configuration name="testTipoContato.testBuscarPorId" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testClienteDAO_testSalvar - 2016.04.15 at 13h 38m 27s.xml">
-      <configuration name="testClienteDAO.testSalvar" configurationId="JUnit" />
+    <history-entry file="testTipoContato_testBuscarTodos - 2016.04.15 at 17h 42m 43s.xml">
+      <configuration name="testTipoContato.testBuscarTodos" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -685,10 +659,10 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66993463" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6688418" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6683006" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -870,65 +844,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/entidades/Cidade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-          <folding>
-            <element signature="e#499#500#0" expanded="false" />
-            <element signature="e#526#527#0" expanded="false" />
-            <element signature="e#566#567#0" expanded="false" />
-            <element signature="e#598#599#0" expanded="false" />
-            <element signature="e#633#634#0" expanded="false" />
-            <element signature="e#662#663#0" expanded="false" />
-            <element signature="e#706#707#0" expanded="false" />
-            <element signature="e#742#743#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/entidades/Estado.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-          <folding>
-            <element signature="e#469#470#0" expanded="false" />
-            <element signature="e#496#497#0" expanded="false" />
-            <element signature="e#536#537#0" expanded="false" />
-            <element signature="e#568#569#0" expanded="false" />
-            <element signature="e#597#598#0" expanded="false" />
-            <element signature="e#622#623#0" expanded="false" />
-            <element signature="e#658#659#0" expanded="false" />
-            <element signature="e#686#687#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/entidades/TipoContato.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
-          <folding>
-            <element signature="e#318#319#0" expanded="false" />
-            <element signature="e#350#351#0" expanded="false" />
-            <element signature="e#382#383#0" expanded="false" />
-            <element signature="e#409#410#0" expanded="false" />
-            <element signature="e#449#450#0" expanded="false" />
-            <element signature="e#481#482#0" expanded="false" />
-            <element signature="e#815#816#0" expanded="false" />
-            <element signature="e#882#883#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springbeans.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
@@ -941,23 +856,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8253425">
           <caret line="170" column="0" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/entidades/Contato.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="83" column="18" selection-start-line="83" selection-start-column="18" selection-end-line="83" selection-end-column="18" />
-          <folding>
-            <element signature="e#758#759#0" expanded="false" />
-            <element signature="e#788#789#0" expanded="false" />
-            <element signature="e#834#835#0" expanded="false" />
-            <element signature="e#872#873#0" expanded="false" />
-            <element signature="e#915#916#0" expanded="false" />
-            <element signature="e#949#950#0" expanded="false" />
-            <element signature="e#1008#1009#0" expanded="false" />
-            <element signature="e#1054#1055#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -986,24 +884,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/DAO/DAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/DAO/GenericDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/entidades/Cliente.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1017,7 +897,118 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/DAO/ClienteDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="14" />
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2692308">
+          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/DAO/GenericDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/DAO/CidadeDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/entidades/Estado.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="68" column="16" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
+          <folding>
+            <element signature="e#1331#1332#0" expanded="true" />
+            <element signature="e#1362#1363#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/entidades/Cidade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="68" column="16" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
+          <folding>
+            <element signature="e#1410#1411#0" expanded="true" />
+            <element signature="e#1457#1458#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/entidades/Contato.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="84" column="15" selection-start-line="84" selection-start-column="15" selection-end-line="84" selection-end-column="15" />
+          <folding>
+            <element signature="e#2113#2114#0" expanded="true" />
+            <element signature="e#2157#2158#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/DAO/EstadoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="5" selection-start-line="21" selection-start-column="4" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/fabricadeprogramador/testEstadoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="21" selection-end-column="92" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/fabricadeprogramador/testCidadeDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="5" selection-start-line="25" selection-start-column="4" selection-end-line="32" selection-end-column="5" />
+          <folding>
+            <element signature="e#542#581#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/DAO/TipoContatoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/fabricadeprogramador/testTipoContato.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8544521">
+          <caret line="39" column="38" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1026,10 +1017,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/br/com/fabricadeprogramador/testClienteDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.67979455">
-          <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.65068495">
+          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/fabricadeprogramador/entidades/TipoContato.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7962329">
+          <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
+          <folding>
+            <element signature="e#928#929#0" expanded="true" />
+            <element signature="e#955#956#0" expanded="true" />
           </folding>
         </state>
       </provider>
