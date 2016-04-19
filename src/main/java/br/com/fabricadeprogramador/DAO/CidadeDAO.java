@@ -1,5 +1,6 @@
 package br.com.fabricadeprogramador.DAO;
 
+import br.com.fabricadeprogramador.Exeptions.DAOExeption;
 import br.com.fabricadeprogramador.entidades.Cidade;
 import br.com.fabricadeprogramador.entidades.Cliente;
 import org.springframework.stereotype.Repository;
@@ -17,6 +18,7 @@ public class CidadeDAO extends GenericDAO<Cidade>{
 
     @PersistenceContext
     EntityManager em;
+
 
     public List<Cidade> buscarTodos() {
         Query query = em.createQuery("select c from Cidade c order by c.id");

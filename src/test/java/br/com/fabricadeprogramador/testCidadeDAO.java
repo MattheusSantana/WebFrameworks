@@ -1,6 +1,7 @@
 package br.com.fabricadeprogramador;
 
 import br.com.fabricadeprogramador.DAO.CidadeDAO;
+import br.com.fabricadeprogramador.Exeptions.DAOExeption;
 import br.com.fabricadeprogramador.entidades.Cidade;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -41,7 +42,12 @@ public class testCidadeDAO {
 
     @Test
     public void testBuscarPorId(){
-        Cidade cidadeRetorno = cidadeDAO.buscarPorId(Cidade.class, 14);
+        Cidade cidadeRetorno = null;
+        try {
+            cidadeRetorno = cidadeDAO.buscarPorId(Cidade.class, 14);
+        } catch (DAOExeption daoExeption) {
+            daoExeption.printStackTrace();
+        }
 
         System.out.println(cidadeRetorno);
     }

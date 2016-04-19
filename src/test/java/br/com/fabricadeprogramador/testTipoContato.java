@@ -1,6 +1,7 @@
 package br.com.fabricadeprogramador;
 
 import br.com.fabricadeprogramador.DAO.TipoContatoDAO;
+import br.com.fabricadeprogramador.Exeptions.DAOExeption;
 import br.com.fabricadeprogramador.entidades.Cidade;
 import br.com.fabricadeprogramador.entidades.TipoContato;
 import org.junit.Test;
@@ -36,7 +37,12 @@ public class testTipoContato {
 
     @Test
     public void testBuscarPorId(){
-        TipoContato tipoContato = tipoContatoDAO.buscarPorId(TipoContato.class, 2);
+        TipoContato tipoContato = null;
+        try {
+            tipoContato = tipoContatoDAO.buscarPorId(TipoContato.class, 2);
+        } catch (DAOExeption daoExeption) {
+            daoExeption.printStackTrace();
+        }
         System.out.println(tipoContato);
     }
 

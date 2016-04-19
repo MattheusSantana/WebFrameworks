@@ -2,6 +2,7 @@
 package br.com.fabricadeprogramador;
 
 import br.com.fabricadeprogramador.DAO.ClienteDAO;
+import br.com.fabricadeprogramador.Exeptions.DAOExeption;
 import br.com.fabricadeprogramador.entidades.*;
 import org.junit.Assert;
 import org.junit.Test;
@@ -62,7 +63,11 @@ public class testClienteDAO {
         cliente.getContato().add(contato2);
         cliente.getContato().add(contato3);
 
-        clienteDAO.salvar(cliente);
+        try {
+            clienteDAO.salvar(cliente);
+        } catch (DAOExeption daoExeption) {
+            daoExeption.printStackTrace();
+        }
         Assert.assertNotNull(cliente);
         System.out.println(cliente);
 
@@ -74,7 +79,12 @@ public class testClienteDAO {
     public void testBuscarPorId(){
 
 
-        Cliente clienteRetorno = (clienteDAO.buscarPorId(Cliente.class, 156));
+        Cliente clienteRetorno = null;
+        try {
+            clienteRetorno = (clienteDAO.buscarPorId(Cliente.class, 156));
+        } catch (DAOExeption daoExeption) {
+            daoExeption.printStackTrace();
+        }
         Assert.assertNotNull(clienteRetorno);
         System.out.println(clienteRetorno);
 
@@ -86,8 +96,13 @@ public class testClienteDAO {
     @Test
     public void testExcluir(){
 
-        clienteDAO.excluir(Cliente.class, 156);
-        Assert.assertNull(clienteDAO.buscarPorId(Cliente.class, 156));
+        try {
+            clienteDAO.excluir(Cliente.class, 156);
+            Assert.assertNull(clienteDAO.buscarPorId(Cliente.class, 156));
+        } catch (DAOExeption daoExeption) {
+            daoExeption.printStackTrace();
+        }
+
 
     }
 
