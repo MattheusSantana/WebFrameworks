@@ -3,8 +3,11 @@ package br.com.fabricadeprogramador.Controller;
 import br.com.fabricadeprogramador.Exeptions.ServiceException;
 import br.com.fabricadeprogramador.Service.ClienteService;
 import br.com.fabricadeprogramador.entidades.Cliente;
+import br.com.fabricadeprogramador.entidades.Estado;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+
+import java.util.List;
 
 /**
  * Created by Matheus on 18/04/2016.
@@ -14,14 +17,26 @@ import org.springframework.stereotype.Controller;
 public class ClienteController {
 
 
-    private Cliente cliente;
 
     @Autowired
     private ClienteService clienteService;
 
+    private List<Estado> estados;
+
+    private Cliente cliente;
+
 
     public ClienteController() {
-    cliente = new Cliente();
+        cliente = new Cliente();
+    }
+
+
+    public List<Estado> getEstados() {
+        return clienteService.buscarTodos();
+    }
+
+    public void setEstados(List<Estado> estados) {
+        this.estados = estados;
     }
 
     public Cliente getCliente() {
@@ -31,6 +46,11 @@ public class ClienteController {
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
     }
+
+
+
+
+
 
     public void salvar(){
         if (cliente.getId() == null){

@@ -6,14 +6,21 @@
       xmlns:p="http://primefaces.org/ui"   >
 
 <h:head>
-
+        <Title>Cadastro de Clientes</Title>
 </h:head>
 <h:body>
 
     <h:form>
+
         Nome:
         <p:inputText value="#{usuarioController.usuario.nome}" required="true"/>
 
+
+
+            <p:selectOneMenu id="estado" value="#{clienteController.estados}" converter="#{estadoConverter}">
+                 <f:selectItem itemvalue="" itemLabel="Estado" noSelectionOption="true"/>
+                <f:selectItems value="#{clienteController.estados}" var="estado" itemLabel="#{estado.nome}"/>
+            </p:selectOneMenu>
 
     </h:form>
 
